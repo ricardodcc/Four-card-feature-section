@@ -1,21 +1,29 @@
 .presentation{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 4rem;
-    padding-bottom: 5rem;
-    padding: 5rem 2rem 5rem 2rem;
+    padding: 5rem 2rem;
+
+    @media screen and (min-width: 426px){
+        padding: 5rem 4rem;
+    }
     
     h1, & > p{
         text-align: center;
         color: var(--ct-secundary);
+        margin: 0 auto;
     }
 
     h1{
         color: hsl(0, 2%, 21%);
         font-weight: var(--fw-light);
         line-height: 1.6;
+        max-width: 300px;
+
         span{
             font-weight: var(--fw-semi-bold);
+        }
+
+        @media screen and (min-width: 520px){
+            font-size: 2rem;
+            max-width: 400px;
         }
     }
 
@@ -24,7 +32,11 @@
         margin-bottom: 4rem;
         margin-top: 1rem;
         line-height: 1.7;
-        font-size: 0.95rem;
+        font-size: 0.85rem;
+
+        @media screen and (min-width: 520px){
+            max-width: 400px;
+        }
     }
 
     span{

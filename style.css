@@ -50,6 +50,12 @@ html {
   flex-direction: column;
   gap: 24px;
 }
+@media screen and (min-width: 375px) {
+  .features-list {
+    align-items: center;
+    gap: 32px;
+  }
+}
 
 .feature {
   background-color: var(--c-white);
@@ -58,6 +64,19 @@ html {
   padding: 1.5rem 1.5rem;
   position: relative;
   overflow: hidden;
+}
+@media screen and (min-width: 375px) {
+  .feature {
+    width: 340px;
+  }
+}
+@media screen and (min-width: 520px) {
+  .feature-mid_screen-right {
+    margin-left: 10vw;
+  }
+  .feature-mid_screen-left {
+    margin-right: 10vw;
+  }
 }
 .feature__name {
   color: var(--ct-primary);
@@ -68,7 +87,7 @@ html {
 }
 .feature__summary {
   color: var(--ct-secundary);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   line-height: 1.8;
   margin-bottom: 1.25rem;
 }
@@ -100,30 +119,44 @@ html {
 }
 
 .presentation {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 4rem;
-  padding-bottom: 5rem;
-  padding: 5rem 2rem 5rem 2rem;
+  padding: 5rem 2rem;
+}
+@media screen and (min-width: 426px) {
+  .presentation {
+    padding: 5rem 4rem;
+  }
 }
 .presentation h1, .presentation > p {
   text-align: center;
   color: var(--ct-secundary);
+  margin: 0 auto;
 }
 .presentation h1 {
   color: hsl(0, 2%, 21%);
   font-weight: var(--fw-light);
   line-height: 1.6;
+  max-width: 300px;
 }
 .presentation h1 span {
   font-weight: var(--fw-semi-bold);
+}
+@media screen and (min-width: 520px) {
+  .presentation h1 {
+    font-size: 2rem;
+    max-width: 400px;
+  }
 }
 .presentation > p {
   font-weight: var(--fw-regular);
   margin-bottom: 4rem;
   margin-top: 1rem;
   line-height: 1.7;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
+}
+@media screen and (min-width: 520px) {
+  .presentation > p {
+    max-width: 400px;
+  }
 }
 .presentation span {
   color: var(--ct-primary);
