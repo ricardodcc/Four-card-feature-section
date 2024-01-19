@@ -1,0 +1,33 @@
+.presentation{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    padding: 5rem 2rem 5rem 2rem;
+    
+    h1, & > p{
+        text-align: center;
+        color: var(--ct-secundary);
+    }
+
+    h1{
+        color: hsl(0, 2%, 21%);
+        font-weight: var(--fw-light);
+        line-height: 1.6;
+        span{
+            font-weight: var(--fw-semi-bold);
+        }
+    }
+
+    & > p{
+        font-weight: var(--fw-regular);
+        margin-bottom: 4rem;
+        margin-top: 1rem;
+        line-height: 1.7;
+        font-size: 0.95rem;
+    }
+
+    span{
+        color: var(--ct-primary);
+    }
+}

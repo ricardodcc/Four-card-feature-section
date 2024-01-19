@@ -1,0 +1,23 @@
+:root{
+    // colors
+        //default
+        --c-white: #FFF;
+        --c-black: #000;
+        //background
+        --c-bg: hsl(0, 0%, 98%);
+        //primary
+        --bc-tb: hsl(0, 78%, 62%);
+        --bc-sv: hsl(180, 62%, 55%);
+        --bc-k: hsl(34, 97%, 64%);
+        --bc-cc: hsl(212, 86%, 64%);
+        //text
+        --ct-primary: hsl(234, 12%, 34%);
+        --ct-secundary:  hsl(229, 6%, 66%);
+        // --ct-
+        //shadow
+        --csh-card: hsl(229, 6%, 66%);
+    //font weights
+    --fw-light: 200;
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+}
